@@ -1,0 +1,17 @@
+m = int(input("Enter first number (m): "))
+n = int(input("Enter second number (n): "))
+
+if m > n:
+    print("Product of odd integers between", m, "and", n, "is: 0")
+else:
+    product = 1
+    odd = False 
+    for i in range(m, n + 1):
+        if i % 2 != 0:  
+            product = product * i
+            odd = True
+    
+    if odd:
+        print("Product of odd integers between", m, "and", n, "is:", product)
+    else:
+        print("No odd numbers between", m, "and", n)
