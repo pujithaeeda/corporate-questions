@@ -1,0 +1,11 @@
+m = int(input("Enter first number (m): "))
+n = int(input("Enter second number (n): "))
+
+if m > n:
+    print("Sum of cubes between", m, "and", n, "is: 0")
+else:
+    total = 0
+    for i in range(m, n + 1):
+        cube = i ** 3
+        total = total + cube
+    print("Sum of cubes between", m, "and", n, "is:", total)
