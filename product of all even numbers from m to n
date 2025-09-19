@@ -1,0 +1,17 @@
+m = int(input("Enter first number (m): "))
+n = int(input("Enter second number (n): "))
+
+if m > n:
+    print("Product of even integers between", m, "and", n, "is: 0")
+else:
+    product = 1
+    even = False
+    for i in range(m, n + 1):
+        if i % 2 == 0:
+            product = product * i
+            even = True
+    
+    if even:
+        print("Product of even integers between", m, "and", n, "is:", product)
+    else:
+        print("No even numbers between", m, "and", n)
